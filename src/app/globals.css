@@ -1,27 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #050505;
+  color: #d5d5d5;
+}
+.transall {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition-duration: 0.5s;
+}
+.transall:hover {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition-duration: 0.5s;
+}
+.neon-hover {
+  text-shadow: 0px 0px 7.9px rgba(213, 213, 213, 0);
+}
+.neon-hover:hover {
+  text-shadow: 0px 0px 7.9px rgba(213, 213, 213, 0.8);
 }

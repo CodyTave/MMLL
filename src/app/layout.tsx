@@ -3,7 +3,7 @@ import "./globals.css";
 import localFont from "next/font/local";
 import { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Morrocan Mobile Legends Leagues",
+  title: "Mena Legends",
   description: "...",
   icons: { icon: "/logo.png" },
 };
@@ -26,12 +26,12 @@ export default function RootLayout({
     <html lang="en">
       <body className={legendist.className}>
         {children}
-        <div className="absolute inset-0 -z-50">
+        <div className="absolute inset-0 -z-50 w-screen">
           <Image
             sizes="100vw"
             width={0}
             height={0}
-            className="w-screen opacity-15 object-cover"
+            className="w-full h-[80vh] opacity-20 object-cover"
             src="/MainBG.png"
             alt="bg"
           />

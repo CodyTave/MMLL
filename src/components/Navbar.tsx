@@ -6,7 +6,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import MobileNav from "./MobileNav";
-import { navBar } from "@/constants/statics";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -23,7 +22,7 @@ export default function Navbar() {
               <Link href={nav.link}>{nav.title}</Link>
             </li>
           ))}
-          <li className="w-20 order-1  neon-hover">
+          <li className="w-20 order-3  neon-hover">
             <Link href="/">
               <Image alt="mmle" src={logo} />
             </Link>
@@ -48,3 +47,30 @@ export default function Navbar() {
     </nav>
   );
 }
+
+export const navBar = [
+  {
+    id: "home",
+    title: "Home",
+    order: "order-1  ",
+    link: "/",
+  },
+  {
+    id: "news",
+    title: "News",
+    order: "order-2",
+    link: "/news",
+  },
+  {
+    id: "events",
+    title: "Events",
+    order: "order-4",
+    link: "/events",
+  },
+  {
+    id: "teams",
+    title: "Teams",
+    order: "order-5",
+    link: "/teams",
+  },
+];

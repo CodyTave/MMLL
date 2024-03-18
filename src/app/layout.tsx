@@ -26,12 +26,12 @@ export default function RootLayout({
     <html lang="en">
       <body className={legendist.className}>
         {children}
-        <div className="absolute inset-0 -z-50 w-screen">
+        <div className="absolute inset-0 -z-50 w-screen bg-gradient">
           <Image
             sizes="100vw"
             width={0}
             height={0}
-            className="w-full h-[80vh] opacity-20 object-cover"
+            className="w-full h-[80vh] opacity-25 object-cover "
             src="/MainBG.png"
             alt="bg"
           />

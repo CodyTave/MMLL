@@ -31,7 +31,7 @@ export default function RootLayout({
             sizes="100vw"
             width={0}
             height={0}
-            className="w-full h-[80vh] opacity-25 object-cover "
+            className="w-full h-[100vh] opacity-25 object-cover "
             src="/MainBG.png"
             alt="bg"
           />

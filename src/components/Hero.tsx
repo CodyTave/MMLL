@@ -5,7 +5,7 @@ import Button from "./Button";
 
 export default function Hero() {
   return (
-    <div className="flex flex-col justify-center items-center sm:p-20 p-5 h-[60vh]">
+    <div className="flex flex-col justify-center items-center sm:p-20 p-5 mt-24 mb-36">
       <Image
         draggable="false"
         onContextMenu={(e) => e.preventDefault()}
